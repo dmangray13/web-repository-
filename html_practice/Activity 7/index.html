@@ -1,0 +1,22 @@
+<html>
+    <body>
+
+<!--these 2 lines declare the text box and button and place them on the webpage-->
+<input id="name-input" type="text" placeholder="Enter your name" />
+<button id="my-button">Click Me</button>
+
+<script>
+<!-- this is a attempted comment idk why it is not working, but these two staments declar varibles based on what is being inputed by the user from the text box and the button-->
+  var myButton = document.querySelector('#my-button');
+  var nameInput = document.querySelector('#name-input');
+  <!--this checks if the button is pressed and then displays a message with the inputed name-->
+  myButton.addEventListener('click', function () {
+    if (nameInput.value !== '') {
+      alert('Hello ' + nameInput.value);
+    }
+  });
+</script>
+
+
+    </body>
+</html>
